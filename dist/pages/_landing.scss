@@ -1,0 +1,602 @@
+.hero {
+  padding: 2rem;
+  &__content {
+    max-width: 35rem;
+    h1 {
+      font-size: clamp(3rem, 6vw, 7.5rem);
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 3rem;
+    }
+    @include mediaQuery {
+      text-align: center;
+      order: 2;
+    }
+  }
+  &__img {
+    img {
+      width: 53rem;
+      height: 53rem;
+      @include mediaQuery {
+        width: 25rem;
+        height: 25rem;
+        margin-bottom: 2rem;
+        order: 1;
+      }
+    }
+  }
+
+  &__wrapper {
+    @include mediaQuery {
+      flex-direction: column;
+    }
+  }
+}
+
+.services {
+  padding: 10rem 0;
+  &__wrapper {
+    @include grid(3, 5rem);
+    @include mediaQuery {
+      @include grid(1, 10rem);
+    }
+  }
+  &__item {
+    a {
+      @include mediaQuery {
+        margin-bottom: 5rem;
+      }
+    }
+    p {
+      text-align: justify;
+      align-items: center;
+      width: 80%;
+      margin-left: 4rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.about {
+  padding: 3rem;
+  &__wrapper {
+    img {
+      @include imgFit(500px, 500px);
+      @include mediaQuery {
+        @include imgFit(350px, 350px);
+        margin-bottom: 4rem;
+      }
+    }
+    @include mediaQuery {
+      flex-direction: column;
+    }
+  }
+  &__content {
+    margin-left: 7rem;
+    max-width: 50rem;
+    @include mediaQuery {
+      margin-left: 0;
+    }
+    h2 {
+      font-size: 3rem;
+      @include mediaQuery {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+.trends {
+  &__header {
+    margin-top: 5rem;
+    @include mediaQuery {
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+  }
+  &__wrapper {
+    @include grid(3, 3rem);
+    @include mediaQuery {
+      @include grid(1, 1rem);
+      padding: 0 3rem;
+    }
+  }
+  &__card {
+    border-radius: 20px;
+    margin: 5rem 0;
+    padding-bottom: 2rem;
+    img {
+      width: 100%;
+    }
+  }
+  &__content {
+    margin: 0 1.5rem;
+    h4 {
+      margin-top: 1.5rem;
+    }
+    p {
+      font-size: 1.4rem;
+      text-align: justify;
+    }
+  }
+}
+
+.callus {
+  &__content {
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.myself {
+  padding: 4rem 0;
+  &__wrapper {
+    @include mediaQuery {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  &__first {
+    @include mediaQuery {
+      order: 2;
+    }
+    h1 {
+      font-size: 8rem;
+      font-weight: 900;
+      @include mediaQuery {
+        font-size: 4rem;
+      }
+    }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 100;
+    }
+    p {
+      max-width: 410px;
+      text-align: justify;
+    }
+  }
+
+  &__icons {
+    @include mediaQuery {
+      margin-left: 14.5rem;
+    }
+    li {
+      font-size: 2rem;
+      margin-right: 2rem;
+    }
+  }
+  &__second {
+    @include mediaQuery {
+      order: 1;
+    }
+    img {
+      @include imgFit(520px, 520px);
+      margin-left: 14rem;
+      @include mediaQuery {
+        @include imgFit(300px, 300px);
+        margin-left: 0;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}
+
+.rp {
+  padding: 3rem 0;
+  img {
+    width: 100%;
+  }
+  h2 {
+    @include mediaQuery {
+      font-size: 3rem;
+    }
+  }
+  &__grid {
+    @include grid(3, 3rem);
+    @include mediaQuery {
+      @include grid(1, 2rem);
+    }
+  }
+  &__card {
+    border-radius: 30px;
+    padding-bottom: 3rem;
+    @include mediaQuery {
+      margin: 2rem 4rem;
+    }
+  }
+  &__content {
+    padding: 0 2.5rem;
+    text-align: justify;
+  }
+  &__wrapper {
+    @include mediaQuery {
+      text-align: center;
+    }
+  }
+}
+
+.webdev {
+  padding: 3rem;
+  &__first {
+    width: 50%;
+    max-width: 450px;
+    text-align: justify;
+    h1 {
+      font-size: 4rem;
+      font-weight: bolder;
+    }
+    .p1 {
+      font-size: 1rem;
+      font-style: italic;
+    }
+    .p2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .p3 {
+      font-size: 1rem;
+      font-style: italic;
+    }
+  }
+  &__second {
+    margin-left: 10rem;
+  }
+}
+
+.graphics {
+  padding: 3rem;
+  color: $clr-light;
+  &__first {
+    width: 50%;
+    max-width: 450px;
+    text-align: justify;
+    h1 {
+      font-size: 4rem;
+      font-weight: bolder;
+    }
+    .p1 {
+      font-size: 1rem;
+      font-style: italic;
+    }
+    .p2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .p3 {
+      font-size: 1rem;
+      font-style: italic;
+    }
+  }
+  &__second {
+    margin-right: 10rem;
+  }
+}
+
+.socialspecialist {
+  padding: 3rem;
+  &__first {
+    width: 50%;
+    max-width: 450px;
+    text-align: justify;
+    h1 {
+      font-size: 4rem;
+      font-weight: bolder;
+    }
+    .p1 {
+      font-size: 1rem;
+      font-style: italic;
+    }
+    .p2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .p3 {
+      font-size: 1rem;
+      font-style: italic;
+    }
+  }
+  &__second {
+    margin-left: 10rem;
+  }
+}
+
+.latest {
+  padding: 2rem 0;
+  .container {
+    @include mediaQuery {
+      h1 {
+        font-size: 3rem;
+        text-align: center;
+      }
+      h4 {
+        font-size: 1.3;
+        text-align: center;
+      }
+    }
+  }
+  &__wrapper1 {
+    @include grid(2, 3rem);
+    @include mediaQuery {
+      @include grid(1, 1rem);
+    }
+  }
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 900;
+  }
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  &__item1 {
+    padding: 5rem 0;
+    @include mediaQuery {
+      font-size: 1rem;
+      max-width: 400px;
+      border-bottom: 2px solid $clr-gray;
+      margin: 0 2rem;
+    }
+    h2 {
+      @include mediaQuery {
+        margin-left: 2rem;
+      }
+    }
+    ul {
+      @include mediaQuery {
+        margin-left: 2.3rem;
+      }
+    }
+    li {
+      margin-right: 5rem;
+      font-size: 1.3rem;
+      @include mediaQuery {
+        font-size: 1rem;
+      }
+    }
+    i {
+      margin-right: 1rem;
+    }
+    p {
+      text-align: justify;
+      @include mediaQuery {
+        margin-left: 2rem;
+      }
+    }
+    a {
+      @include mediaQuery {
+        margin-left: 2rem;
+      }
+    }
+    img {
+      @include mediaQuery {
+        @include imgFit(450px, 200px);
+        padding-right: 3.8rem;
+      }
+    }
+  }
+
+  &__item2 {
+    padding: 5rem 0;
+    @include mediaQuery {
+      font-size: 1rem;
+      max-width: 400px;
+      border-bottom: 2px solid $clr-gray;
+      margin: 0 2rem;
+    }
+    h2 {
+      @include mediaQuery {
+        margin-left: 2rem;
+      }
+    }
+    ul {
+      @include mediaQuery {
+        margin-left: 2.3rem;
+      }
+    }
+    li {
+      margin-right: 5rem;
+      font-size: 1.3rem;
+      @include mediaQuery {
+        font-size: 1rem;
+      }
+    }
+    i {
+      margin-right: 1rem;
+    }
+    p {
+      text-align: justify;
+      @include mediaQuery {
+        margin-left: 2rem;
+      }
+    }
+    a {
+      @include mediaQuery {
+        margin-left: 2rem;
+      }
+    }
+    img {
+      @include mediaQuery {
+        @include imgFit(450px, 200px);
+        padding-right: 3.8rem;
+      }
+    }
+  }
+
+  .latest2 {
+    @include mediaQuery {
+      text-align: center;
+      h2 {
+        font-size: 2rem;
+      }
+    }
+    .categories {
+      padding-bottom: 8.5rem;
+      border-bottom: 2px solid $clr-gray;
+      @include mediaQuery {
+        margin: 0 2rem;
+      }
+      table {
+        width: 100%;
+        line-height: 2.5;
+        @include mediaQuery {
+          font-size: 1.5rem;
+          max-width: 300px;
+          margin-left: 5.1em;
+          tr {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+  .recentpost {
+    padding: 5rem 0;
+    border-bottom: 2px solid $clr-gray;
+    @include mediaQuery {
+      margin: 0 2rem;
+    }
+    &__content {
+      @include mediaQuery {
+        margin-left: 4rem;
+      }
+      h2 {
+        @include mediaQuery {
+          text-align: center;
+        }
+      }
+      h4 {
+        font-weight: 600;
+        margin-bottom: 4rem;
+      }
+      img {
+        margin-right: 2rem;
+      }
+    }
+    &__item {
+      padding: 2rem 0;
+      text-align: left;
+      .p1 {
+        font-weight: 700;
+        margin-bottom: 4rem;
+        @include mediaQuery {
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+
+  .tags {
+    padding: 5rem 0;
+  }
+  span {
+    margin: 0.8rem;
+  }
+}
+
+.contact {
+  border-top: 2px solid #1d1f21;
+  padding: 8rem;
+  @include mediaQuery {
+    padding: 4rem;
+  }
+
+  &__wrapper {
+    @include grid(2, 1rem);
+    @include mediaQuery {
+      @include grid(1, 1rem);
+    }
+  }
+  &__content {
+    @include mediaQuery {
+      padding: 0;
+      max-width: 400px;
+      text-align: center;
+      // order: 2;
+      ul {
+        margin-left: 2rem;
+        text-align: left;
+        max-width: 300px;
+      }
+    }
+  }
+  &__icons {
+    ul {
+      @include mediaQuery {
+        margin-left: 10rem;
+      }
+    }
+  }
+  h1 {
+    font-size: 4rem;
+    color: $clr-primary;
+  }
+  li {
+    margin-bottom: 3rem;
+  }
+  i {
+    font-size: 2rem;
+    color: $clr-primary;
+  }
+  p {
+    max-width: 400px;
+  }
+
+  &__icons {
+    margin-top: 5rem;
+    i {
+      color: $clr-light;
+      margin-right: 2rem;
+    }
+  }
+}
+
+.textboxes {
+  @include mediaQuery {
+    margin-top: 0;
+    // order: 1;
+  }
+
+  textarea {
+    width: 50rem;
+    height: 5rem;
+    margin-left: 7rem;
+    color: $clr-gray;
+    @include mediaQuery {
+      margin-left: 0;
+      width: 38rem;
+      height: 5rem;
+    }
+  }
+  textarea:nth-child(3) {
+    width: 50rem;
+    height: 12rem;
+    @include mediaQuery {
+      width: 38rem;
+      height: 12rem;
+    }
+  }
+
+  a {
+    margin-left: 40rem;
+    margin-top: 2rem;
+    @include mediaQuery {
+      margin-left: 12rem;
+    }
+  }
+}
